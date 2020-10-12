@@ -5,11 +5,13 @@ Home: https://github.com/adamchainz/treepoem
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/treepoem-feedstock/blob/master/LICENSE.txt)
 
 Summary: Barcode rendering for Python supporting QRcode, Aztec, PDF417, I25, Code128, Code39 and many more types.
 
+Development: https://github.com/adamchainz/treepoem
 
+Documentation: https://github.com/adamchainz/treepoem
 
 Current build status
 ====================

@@ -1,5 +1,5 @@
 {% set name = "treepoem" %}
-{% set version = "3.6.0" %}
+{% set version = "3.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9c8d399ae2652fb726cc3fa15c81a156c39c6a945f4f1b7bd7757823ea2fd96f
+  sha256: 10df22747d839290fb162fda1d1229e84753b929c20700afbb3a771b02c201b5
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:

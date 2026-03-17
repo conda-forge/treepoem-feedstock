@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/treepoem-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/treepoem-{{ version }}.tar.gz
   sha256: 4cad77106796e4bef287acd018faf9b0247dea403c2c51ab902b511b8ed4c9c8
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - treepoem=treepoem.__main__:main
@@ -19,10 +19,10 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - pillow
     - ghostscript
 
@@ -34,6 +34,7 @@ test:
     - treepoem --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/adamchainz/treepoem
